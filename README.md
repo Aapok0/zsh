@@ -10,7 +10,7 @@ Path in the beginning depends on the system you have. Plugins and themes need to
 
 ## Themes and plugins
 
-(Spaceship prompt)[https://github.com/spaceship-prompt/spaceship-prompt]
-(Fast Syntax Highlighting)[https://github.com/zdharma-continuum/fast-syntax-highlighting]
-(ZSH Autosuggestions)[https://github.com/zsh-users/zsh-autosuggestions]
-(ZSH Completions)[https://github.com/zsh-users/zsh-completions]
+[Spaceship prompt](https://github.com/spaceship-prompt/spaceship-prompt)
+[Fast Syntax Highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)
+[ZSH Autosuggestions)](https://github.com/zsh-users/zsh-autosuggestions)
+[ZSH Completions](https://github.com/zsh-users/zsh-completions)
