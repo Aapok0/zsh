@@ -16,6 +16,11 @@ HISTFILE=~/.zsh/.zsh_history
 setopt histignorealldups histfindnodups histignorespace incappendhistory sharehistory
 
 
+### DEFAULT EDITOR
+export EDITOR='nvim'
+export VISUAL='nvim'
+
+
 ### COMPLETIONS
 # Use modern completion system
 autoload -Uz compinit
@@ -93,6 +98,9 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+# Always use nvim
+alias vim='nvim'
 
 
 ### PROGRAMS
