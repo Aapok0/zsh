@@ -14,3 +14,17 @@ Path in the beginning depends on the system you have. Plugins and themes need to
 - [Fast Syntax Highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)
 - [ZSH Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [ZSH Completions](https://github.com/zsh-users/zsh-completions)
+
+## Extra step for Mac
+
+Dircolors don't exist in Mac be default, but they can be downloaded as part of coreutils:
+
+```bash
+brew install coreutils
+```
+
+Also add the following to .zshrc:
+
+```bash
+export PATH='/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH'
+```
