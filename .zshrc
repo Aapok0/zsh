@@ -102,6 +102,11 @@ alias l='ls -CF'
 # Always use nvim
 alias vim='nvim'
 
+# New tmux session with name
+alias tmuxn='tmux new-session -s'
+# Attach to tmux session with name
+alias tmuxa='tmux attach-session -t'
+
 
 ### PROGRAMS
 # add flyctl to PATH
