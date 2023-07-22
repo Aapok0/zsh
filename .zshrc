@@ -2,15 +2,11 @@
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:$PATH
 
 
-### ZSH HOME
-export ZSH=$HOME/.zsh
-
-
 ### HISTORY CONFIG
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.zsh/.zsh_history
+HISTFILE=~/.config/zsh/.zsh_history
 
 # History won't save duplicates or lines starting with space, search won't show duplicates, history is incrementally appended and history is shared between terminals
 setopt histignorealldups histfindnodups histignorespace incappendhistory sharehistory
@@ -47,7 +43,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 ### PROMPT THEME
 # Spaceship theme - install from https://github.com/spaceship-prompt/spaceship-prompt
-source $ZSH/themes/spaceship-prompt/spaceship.zsh-theme
+source $ZDOTDIR/themes/spaceship-prompt/spaceship.zsh-theme
 
 # Spaceship config - https://spaceship-prompt.sh/config/prompt/#Prompt-order
 SPACESHIP_PROMPT_ORDER=(
@@ -70,13 +66,13 @@ SPACESHIP_CHAR_SUFFIX=" "
 ### PLUGINS
 
 # Fast-Syntax-Highlighting - install from https://github.com/zdharma-continuum/fast-syntax-highlighting
-source $ZSH/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $ZDOTDIR/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 # ZSH-Autosuggestions - install from https://github.com/zsh-users/zsh-autosuggestions
-source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # ZSH-Completions - install from https://github.com/zsh-users/zsh-completions
-fpath=($ZSH/plugins/zsh-completions/src $fpath)
+fpath=($ZDOTDIR/plugins/zsh-completions/src $fpath)
 
 ### ALIASES AND KEYBINDINGS
 # Use vim keybindings even if EDITOR is set to something else
@@ -120,3 +116,9 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# zoxide
+eval "$(zoxide init zsh)"
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

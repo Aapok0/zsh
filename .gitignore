@@ -1,0 +1,9 @@
+# Ignore zsh history file
+.zsh_history
+
+# Ignore completion dump file
+.zcompdump
+
+# Ignore plugins and themes directory
+plugins/
+themes/
