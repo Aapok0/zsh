@@ -90,13 +90,24 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# Listing aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+# Listing aliases with ls
+#alias ll='ls -laF'
+#alias la='ls -A'
+#alias l='ls -CF'
+
+# Listing aliases with exa
+alias ls='exa'
+alias ll='exa -laF'
+alias la='exa -a'
+
+# Alias zoxide to cd
+#alias z='cd'
 
 # Always use nvim
 alias vim='nvim'
+
+# Shorter alias for batcat
+alias bat='batcat'
 
 # New tmux session with name
 alias tmuxn='tmux new-session -s'
@@ -104,7 +115,7 @@ alias tmuxn='tmux new-session -s'
 alias tmuxa='tmux attach-session -t'
 
 
-### PROGRAMS
+### COMMAND LINE TOOLS
 # add flyctl to PATH
 export FLYCTL_INSTALL="/home/aapoko/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"

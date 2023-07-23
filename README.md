@@ -15,11 +15,23 @@ Path in the beginning depends on the system you have. Plugins and themes need to
 - [ZSH Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [ZSH Completions](https://github.com/zsh-users/zsh-completions)
 
-## Core terminal programs
+## Core command line tools
+
+### exa
+
+Better ls to list directories and their contents. Aliased ls to exa.
+
+### htop and btop
+
+Better resource and process monitoring. Prefer btop currently.
+
+### bat (batcat)
+
+More featured cat command. Still testing it out so only aliased it to bat.
 
 ### neovim
 
-Text/code editor I use. Config located [here](https://github.com/Aapok0/nvim).
+Text/code editor I use. Config located [here](https://github.com/Aapok0/nvim). Aliased to vim.
 
 ### tmux
 
@@ -27,7 +39,7 @@ Session, window and pane manager. Config located [here](https://github.com/Aapok
 
 ### zoxide
 
-Tool to make moving between directories faster. It remembers your old cd commands and can query them so you can move around with just a keyword.
+Tool to make moving between directories faster. It remembers your old cd commands and can query them so you can move around with just a keyword. Still testing, if I will alias it to cd.
 
 ### fzf
 
@@ -37,6 +49,18 @@ Fuzzy finder to look for files and commands more quickly. Easiest to install and
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
+
+### ripgrep
+
+Better recursive grep to current directory and subdirectories with regex pattern. Used in neovim telescope plugin.
+
+### entr
+
+Runs commands , if target file/s change. Good for programming and testing.
+
+### xclip
+
+Clipboard command line tool. I use it especially to copy paste with clipboard in neovim.
 
 ## Extra step for Mac
 
