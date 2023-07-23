@@ -97,8 +97,11 @@ fi
 
 # Listing aliases with exa
 alias ls='exa'
-alias ll='exa -laF'
-alias la='exa -a'
+alias ll='exa -laF --icons'
+alias la='exa -a --icons'
+
+# Alias tree to exa
+alias tree='exa -aFT --icons'
 
 # Alias zoxide to cd
 #alias z='cd'

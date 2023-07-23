@@ -19,7 +19,7 @@ Path in the beginning depends on the system you have. Plugins and themes need to
 
 ### exa
 
-Better ls to list directories and their contents. Aliased ls to exa.
+Better ls to list directories and their contents. Aliased ls and tree to exa.
 
 ### htop and btop
 
