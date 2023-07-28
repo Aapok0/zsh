@@ -91,13 +91,13 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # Listing aliases with ls
-#alias ll='ls -laF'
+#alias ll='ls -lahF --group-directories-first'
 #alias la='ls -A'
 #alias l='ls -CF'
 
 # Listing aliases with exa
 alias ls='exa'
-alias ll='exa -laF --icons'
+alias ll='exa -lahF --icons --group-directories-first'
 alias la='exa -a --icons'
 
 # Alias tree to exa
