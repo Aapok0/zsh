@@ -8,8 +8,8 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.config/zsh/.zsh_history
 
-# History won't save duplicates or lines starting with space, search won't show duplicates, history is incrementally appended and history is shared between terminals
-setopt histignorealldups histfindnodups histignorespace incappendhistory sharehistory
+# History won't save duplicates or lines starting with space, search won't show duplicates and history is shared between terminals
+setopt histignorealldups histfindnodups histignorespace sharehistory #incappendhistory = history is incrementally appended
 
 
 ### DEFAULT EDITOR
