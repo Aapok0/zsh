@@ -117,6 +117,9 @@ alias tmuxn='tmux new-session -s'
 # Attach to tmux session with name
 alias tmuxa='tmux attach-session -t'
 
+# Shorter alias for terraform
+alias tf='terraform'
+
 
 ### COMMAND LINE TOOLS
 # add flyctl to PATH
