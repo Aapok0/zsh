@@ -112,6 +112,9 @@ alias vim='nvim'
 # Shorter alias for batcat
 alias bat='batcat'
 
+# Alias python3 to python
+alias python='python3'
+
 # New tmux session with name
 alias tmuxn='tmux new-session -s'
 # Attach to tmux session with name
