@@ -146,5 +146,3 @@ eval "$(zoxide init zsh)"
 # pipx (Ansible)
 # Created by `pipx` on 2023-08-17 07:33:49
 export PATH="$PATH:/home/aapoko/.local/bin"
-# pipx completions
-eval "$(register-python-argcomplete pipx)"
