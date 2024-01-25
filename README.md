@@ -62,6 +62,14 @@ Runs commands , if target file/s change. Good for programming and testing.
 
 Clipboard command line tool. I use it especially to copy paste with clipboard in neovim.
 
+### tfswitch
+
+Command line tool to install and switch between different versions of terraform. In debian based distros it can be installed with:
+
+```bash
+curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
+```
+
 ## Extra step for Mac
 
 Dircolors don't exist in Mac be default, but they can be downloaded as part of coreutils:

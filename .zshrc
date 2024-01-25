@@ -97,7 +97,7 @@ fi
 
 # Listing aliases with exa
 alias ls='exa'
-alias ll='exa -lahF --icons --group-directories-first'
+alias ll='exa -laghF --icons --group-directories-first'
 alias la='exa -a --icons'
 
 # Alias tree to exa
@@ -110,7 +110,10 @@ alias tree='exa -aFT --icons'
 alias vim='nvim'
 
 # Shorter alias for batcat
-alias bat='batcat'
+#alias bat='batcat'
+# Alias cat to batcat
+alias cat='batcat'
+export BAT_PAGER=never
 
 # Alias python3 to python
 alias python='python3'
@@ -146,3 +149,6 @@ eval "$(zoxide init zsh)"
 # pipx (Ansible)
 # Created by `pipx` on 2023-08-17 07:33:49
 export PATH="$PATH:/home/aapoko/.local/bin"
+
+# bin path for tfswitch
+export PATH="/home/aapoko/bin:$PATH"
