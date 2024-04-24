@@ -4,6 +4,7 @@
 # Ignore completion dump file
 .zcompdump
 
-# Ignore plugins and themes directory
+# Ignore tools, plugins and themes directory
+tools/
 plugins/
 themes/

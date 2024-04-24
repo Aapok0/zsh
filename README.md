@@ -11,15 +11,27 @@ Path in the beginning depends on the system you have. Plugins and themes need to
 ## Themes and plugins
 
 - [Spaceship prompt](https://github.com/spaceship-prompt/spaceship-prompt)
+- [PowerLevel10k prompt (currently in use)](https://github.com/romkatv/powerlevel10k)
 - [Fast Syntax Highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)
 - [ZSH Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [ZSH Completions](https://github.com/zsh-users/zsh-completions)
 
 ## Core command line tools
 
-### exa
+### eza
 
-Better ls to list directories and their contents. Aliased ls and tree to exa.
+Better ls to list directories and their contents. Aliased ls and tree to eza.
+
+If using debian based distro, use following commands to install:
+
+```bash
+sudo mkdir -p /etc/apt/keyrings
+wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
+echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
+sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
+sudo apt update
+sudo apt install -y eza
+```
 
 ### htop and btop
 
@@ -27,7 +39,9 @@ Better resource and process monitoring. Prefer btop currently.
 
 ### bat (batcat)
 
-More featured cat command. Still testing it out so only aliased it to bat.
+More featured cat command.
+
+If using debian based distro, install newest release with .deb file from [here](https://github.com/sharkdp/bat/releases).
 
 ### neovim
 
@@ -37,10 +51,6 @@ Text/code editor I use. Config located [here](https://github.com/Aapok0/nvim). A
 
 Session, window and pane manager. Config located [here](https://github.com/Aapok0/tmux).
 
-### zoxide
-
-Tool to make moving between directories faster. It remembers your old cd commands and can query them so you can move around with just a keyword. Still testing, if I will alias it to cd.
-
 ### fzf
 
 Fuzzy finder to look for files and commands more quickly. Easiest to install and configure from the source:
@@ -48,6 +58,20 @@ Fuzzy finder to look for files and commands more quickly. Easiest to install and
 ```bash
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+```
+
+### fd
+
+Alternative for find, that provides sensible filters.
+
+### zoxide
+
+Tool to make moving between directories faster. It remembers your old cd commands and can query them so you can move around with just a keyword.
+
+If using a debian based distro, install from source:
+
+```bash
+curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 ```
 
 ### ripgrep
@@ -68,6 +92,38 @@ Command line tool to install and switch between different versions of terraform.
 
 ```bash
 curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
+```
+
+### tldr
+
+Tool to show quick tips how to use common command line tools.
+
+In debian based distros it's easiest to install with npm:
+
+```bash
+sudo npm install -g tldr
+```
+
+In mac use homebrew and install the rust client:
+
+```bash
+brew install tlrc
+```
+
+### thefuck
+
+Tool to autocorrect a command you fucked up earlier.
+
+In debian based distros it's easiest to install with pip:
+
+```bash
+pip install thefuck --user
+```
+
+Use homebrew on mac:
+
+```bash
+brew install thefuck
 ```
 
 ## Extra step for Mac
