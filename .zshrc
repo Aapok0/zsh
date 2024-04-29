@@ -200,11 +200,11 @@ export BAT_THEME="Catppuccin Mocha"
 eval $(thefuck --alias)
 
 # add flyctl to PATH
-export FLYCTL_INSTALL="/home/aapoko/.fly"
+export FLYCTL_INSTALL="${HOME}/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
 # pnpm
-export PNPM_HOME="/home/aapoko/.local/share/pnpm"
+export PNPM_HOME="${HOME}/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -213,7 +213,7 @@ esac
 
 # pipx (Ansible)
 # Created by `pipx` on 2023-08-17 07:33:49
-export PATH="$PATH:/home/aapoko/.local/bin"
+export PATH="$PATH:${HOME}/.local/bin"
 
 # bin path for tfswitch
-export PATH="/home/aapoko/bin:$PATH"
+export PATH="${HOME}/bin:$PATH"

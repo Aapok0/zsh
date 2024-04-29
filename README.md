@@ -94,6 +94,25 @@ Command line tool to install and switch between different versions of terraform.
 curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
 ```
 
+### NodeJS and npm
+
+For everything javascript and dependency for many other tools. Installed with:
+
+```bash
+# Linux (adding nodesource)
+curl -sL https://deb.nodesource.com/setup_20.x | sudo bash -
+sudo apt-install nodejs
+
+# Linux/Mac (using nvm -> URL will change with new releases)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+source ~/.config/zsh/.zshrc
+nvm list-remote
+nvm install <version>
+
+# Mac
+brew install node
+```
+
 ### tldr
 
 Tool to show quick tips how to use common command line tools.
